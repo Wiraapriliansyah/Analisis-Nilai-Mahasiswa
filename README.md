@@ -92,5 +92,15 @@ print(f"Faktor yang paling mempengaruhi nilai mahasiswa adalah: {max_correlation
 ## Hasil
 Faktor yang paling mempengaruhi nilai mahasiswa akan ditampilkan di terminal setelah menjalankan script.
 ```
-![Figure_1](https://github.com/Wiraapriliansyah/Analisis-Nilai-Mahasiswa/assets/152155184/bb93a901-d9dc-403d-b294-1f7834d4e4f9)
+
+![Figure_1](https://github.com/Wiraapriliansyah/Analisis-Nilai-Mahasiswa/assets/152155184/3372cfd0-3aab-46a6-b1d3-262245c0b480)
+
+![Figure_2](https://github.com/Wiraapriliansyah/Analisis-Nilai-Mahasiswa/assets/152155184/f5f48f2e-8b59-42fa-9d3a-c106121ae9c3)
+
+![Figure_3](https://github.com/Wiraapriliansyah/Analisis-Nilai-Mahasiswa/assets/152155184/737d9b92-6af8-4c73-856b-e172742a8842)
+
+![Figure_4](https://github.com/Wiraapriliansyah/Analisis-Nilai-Mahasiswa/assets/152155184/45e0afe7-2d13-4562-a80b-287fed5d1b7e)
+
+
+
 
