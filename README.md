@@ -89,10 +89,6 @@ max_correlation_factor = correlation.idxmax()
 print(f"Faktor yang paling mempengaruhi nilai mahasiswa adalah: {max_correlation_factor}")
 ```
 
-## Hasil
-Faktor yang paling mempengaruhi nilai mahasiswa akan ditampilkan di terminal setelah menjalankan script.
-```
-
 ![Figure_1](https://github.com/Wiraapriliansyah/Analisis-Nilai-Mahasiswa/assets/152155184/3372cfd0-3aab-46a6-b1d3-262245c0b480)
 
 ![Figure_2](https://github.com/Wiraapriliansyah/Analisis-Nilai-Mahasiswa/assets/152155184/f5f48f2e-8b59-42fa-9d3a-c106121ae9c3)
