@@ -16,9 +16,10 @@ pip install pandas matplotlib
 ```
 
 ### File yang Dibutuhkan
-- `mahasiswa_data_umum.csv`
-- ID,Nama,Jurusan,Semester
-- 1,Budi,Teknik Informatika,4
+#### `mahasiswa_data_umum.csv`
+```csv
+ID,Nama,Jurusan,Semester
+1,Budi,Teknik Informatika,4
 2,Siti,Manajemen,3
 3,Andi,Akuntansi,5
 4,Rina,Psikologi,2
@@ -68,9 +69,11 @@ pip install pandas matplotlib
 48,Asep,Ilmu Komunikasi,4
 49,Ratna,Sastra Inggris,5
 50,Ahmad,Manajemen,2
+```
 
-- `mahasiswa_data_waktu_belajar_nilai.csv`
-  ID,Waktu Belajar (jam/minggu),Nilai
+#### `mahasiswa_data_waktu_belajar_nilai.csv`
+```csv
+ID,Waktu Belajar (jam/minggu),Nilai
 1,10,68
 2,15,78
 3,20,82
@@ -121,10 +124,11 @@ pip install pandas matplotlib
 48,48,95
 49,3,57
 50,5,63
-![image](https://github.com/Wiraapriliansyah/Analisis-Nilai-Mahasiswa/assets/152155184/023fb1eb-32d8-4254-a533-47d1068083bc)
+```
 
-- `mahasiswa_data_faktor_tambahan.csv`
-  ID,Motivasi (skala 1-10),Kesehatan (skala 1-10),Partisipasi Kelas (skala 1-10),Dukungan Sosial (skala 1-10)
+#### `mahasiswa_data_faktor_tambahan.csv`
+```csv
+ID,Motivasi (skala 1-10),Kesehatan (skala 1-10),Partisipasi Kelas (skala 1-10),Dukungan Sosial (skala 1-10)
 1,7,8,6,7
 2,8,7,7,8
 3,9,8,8,6
@@ -175,8 +179,7 @@ pip install pandas matplotlib
 48,10,9,9,10
 49,6,7,5,6
 50,7,8,6,7
-![image](https://github.com/Wiraapriliansyah/Analisis-Nilai-Mahasiswa/assets/152155184/066fd5e8-15e0-4a16-addd-017f07bbac3d)
-  
+```
 
 ### Menjalankan Kode
 1. Pastikan semua file CSV berada di direktori yang sama dengan script Python `analisis_nilai_tertinggi.py`.
@@ -201,9 +204,12 @@ Kode akan melakukan langkah-langkah berikut:
 Jawaban:
 Data dimuat menggunakan `pd.read_csv()` dan digabungkan menggunakan `merge()`. Contohnya:
 ```python
+import pandas as pd
+
 data_umum = pd.read_csv('mahasiswa_data_umum.csv')
 data_waktu_belajar_nilai = pd.read_csv('mahasiswa_data_waktu_belajar_nilai.csv')
 data_faktor_tambahan = pd.read_csv('mahasiswa_data_faktor_tambahan.csv')
+
 data = data_umum.merge(data_waktu_belajar_nilai, on='ID').merge(data_faktor_tambahan, on='ID')
 ```
 
@@ -220,7 +226,9 @@ data_numerik = data.drop(columns=['ID', 'Nama', 'Jurusan'])
 Jawaban:
 Korelasi dihitung menggunakan `corr()` dari pandas. Contohnya:
 ```python
-correlation = data_numerik.corr()['Nilai'][['Motivasi (skala 1-10)', 'Kesehatan (skala 1-10)', 'Partisipasi Kelas (skala 1-10)', 'Dukungan Sosial (skala 1-10)']]
+correlation = data_numerik.corr()['Nilai'][['Motivasi (skala 1-10)', 'Kesehatan (skala 1-10)', 'Partisipasi Kelas (skala 
+
+1-10)', 'Dukungan Sosial (skala 1-10)']]
 ```
 
 #### Pertanyaan 4
@@ -228,6 +236,8 @@ correlation = data_numerik.corr()['Nilai'][['Motivasi (skala 1-10)', 'Kesehatan 
 Jawaban:
 Korelasi divisualisasikan menggunakan `plot()` dari matplotlib. Contohnya:
 ```python
+import matplotlib.pyplot as plt
+
 plt.figure(figsize=(10, 6))
 correlation.plot(kind='bar', color='lightblue')
 plt.title('Korelasi Antara Nilai Mahasiswa dengan Faktor Tambahan')
