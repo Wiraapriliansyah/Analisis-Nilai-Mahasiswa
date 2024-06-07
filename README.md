@@ -17,8 +17,8 @@ pip install pandas matplotlib
 
 ### File yang Dibutuhkan
 - `mahasiswa_data_umum.csv`
-ID,Nama,Jurusan,Semester
-1,Budi,Teknik Informatika,4
+- ID,Nama,Jurusan,Semester
+- 1,Budi,Teknik Informatika,4
 2,Siti,Manajemen,3
 3,Andi,Akuntansi,5
 4,Rina,Psikologi,2
@@ -68,7 +68,6 @@ ID,Nama,Jurusan,Semester
 48,Asep,Ilmu Komunikasi,4
 49,Ratna,Sastra Inggris,5
 50,Ahmad,Manajemen,2
-![image](https://github.com/Wiraapriliansyah/Analisis-Nilai-Mahasiswa/assets/152155184/819ffc68-06a9-4369-bffb-3c2fbfa457b0)
 
 - `mahasiswa_data_waktu_belajar_nilai.csv`
   ID,Waktu Belajar (jam/minggu),Nilai
